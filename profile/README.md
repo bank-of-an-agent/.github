@@ -44,9 +44,26 @@ spend past them. If Agent Bank disappears, the owner withdraws everything with t
 - **Save**: goal and time-locked vaults, auto-save rules, refills from the org treasury.
 - **Stay accountable**: AP2 mandates prove a human authorized the spend; every movement lands in
   a double-entry ledger that reconciles against the chain, with monthly statements.
+- **Prove without revealing**: show a seller that a verified business stands behind the agent,
+  that it has a clean track record, or that funds are reserved for that seller, without
+  revealing which agent it is (below).
 
 Agents reach Agent Bank through a REST API, TypeScript and Python SDKs, or an MCP server that
 exposes money tools only.
+
+## Prove without revealing
+
+Agent Bank attests facts about each agent (its verified backer, limits, balance, reservations
+and track record), hashes them into a Merkle tree and publishes the root on Base. The agent then
+proves a statement such as "a verified company backs me and $500 is reserved for you" with a
+zero-knowledge proof. The verifier checks it in milliseconds, or on-chain, and learns the
+statement, never which agent made it. Owners choose what may be disclosed, and the circuit
+enforces their choice.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/proofs-dark.png">
+  <img alt="Private proofs: Agent Bank attests 13 facts per agent into a Merkle tree and publishes the root on Base; the agent proves a statement in zero knowledge with a secret only it holds; the verifier checks the root and learns that a verified company backs the agent, that it can pay, that funds are reserved for it and that it has no lost disputes, never who the agent is" src="assets/proofs-light.png">
+</picture>
 
 ## Repositories
 
@@ -100,6 +117,7 @@ Code for all six phases exists and runs on Base Sepolia and in simulation. Gates
 | 3 · Payments and x402 | End-to-end suite on Base Sepolia; audits booked | Suite green on the simulated chain; needs testnet credentials and audit booking |
 | 4 · Escrow and streams | No high or critical audit findings | Contracts at 100% coverage; needs two audits |
 | 5 · Developer surface and beta | Legal, audits, exit tool, on-call | Exit tool verified by a shutdown drill; needs counsel, audits and on-call |
+| + · Private proofs | Every product proves end to end; nothing false, undisclosed, revoked or replayed accepted | **Met on testnet**: 26 real proofs end to end; needs a circuit audit and a public ceremony for mainnet |
 
 ## Security
 

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 400" width="1040" height="400" role="img" aria-label="Private proofs: Agent Bank attests facts and anchors a root on Base; the agent proves a statement in zero knowledge; the verifier learns the statement, never who the agent is">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#070B16"/><stop offset="1" stop-color="#0D1630"/></linearGradient><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#6F86C2"/></marker></defs>
+<rect width="1040" height="400" rx="20" fill="url(#bg)"/>
+<g font-family="Inter, 'Inter Variable', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+<text x="36" y="52" font-size="12" font-weight="600" letter-spacing="2" fill="#7C8BB3">AGENT BANK · OFF-CHAIN</text>
+<text x="390" y="52" font-size="12" font-weight="600" letter-spacing="2" fill="#7C8BB3">BASE · ON-CHAIN</text>
+<text x="744" y="52" font-size="12" font-weight="600" letter-spacing="2" fill="#7C8BB3">VERIFIER</text>
+<rect x="36" y="96" width="260" height="150" rx="12" fill="#13224A" stroke="#3D5FBF"/>
+<text x="56" y="128" font-size="16" font-weight="600" fill="#F1F4FB">Agent Bank attests</text>
+<text x="56" y="154" font-size="12.5" fill="#93A1C2">13 facts per agent: KYB status,</text>
+<text x="56" y="174" font-size="12.5" fill="#93A1C2">limits, balance, reservations,</text>
+<text x="56" y="194" font-size="12.5" fill="#93A1C2">track record</text>
+<text x="56" y="222" font-size="12.5" fill="#F1F4FB">hashed into a Merkle tree</text>
+<rect x="390" y="70" width="260" height="92" rx="12" fill="#13224A" stroke="#3D5FBF"/>
+<text x="410" y="102" font-size="16" font-weight="600" fill="#F1F4FB">Registry on Base</text>
+<text x="410" y="126" font-size="12.5" fill="#93A1C2">one public root per snapshot</text>
+<text x="410" y="146" font-size="12.5" fill="#93A1C2">revocable · facts stay hidden</text>
+<text x="390" y="196" font-size="12" font-weight="600" letter-spacing="2" fill="#7C8BB3">AGENT RUNTIME</text>
+<rect x="390" y="208" width="260" height="92" rx="12" fill="#0E2A2C" stroke="#1F8F83"/>
+<text x="410" y="240" font-size="16" font-weight="600" fill="#F1F4FB">Agent proves</text>
+<text x="410" y="264" font-size="12.5" fill="#93A1C2">zero-knowledge proof, about 1.5 s</text>
+<text x="410" y="284" font-size="12.5" fill="#93A1C2">with a secret only it holds</text>
+<rect x="744" y="70" width="260" height="230" rx="12" fill="#1E1A3F" stroke="#6D5BC9"/>
+<text x="764" y="102" font-size="16" font-weight="600" fill="#F1F4FB">Verifier learns</text>
+<text x="764" y="124" font-size="12.5" fill="#93A1C2">a statement, checked in ~15 ms</text>
+<circle cx="772" cy="154" r="8" fill="none" stroke="#2DD4BF" stroke-width="1.4"/><path d="M768 154 l3 3 l6 -6" fill="none" stroke="#2DD4BF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="788" y="158" font-size="12.5" fill="#F1F4FB">a verified company backs it</text>
+<circle cx="772" cy="182" r="8" fill="none" stroke="#2DD4BF" stroke-width="1.4"/><path d="M768 182 l3 3 l6 -6" fill="none" stroke="#2DD4BF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="788" y="186" font-size="12.5" fill="#F1F4FB">it can pay $5 per call</text>
+<circle cx="772" cy="210" r="8" fill="none" stroke="#2DD4BF" stroke-width="1.4"/><path d="M768 210 l3 3 l6 -6" fill="none" stroke="#2DD4BF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="788" y="214" font-size="12.5" fill="#F1F4FB">$500 is reserved for me</text>
+<circle cx="772" cy="238" r="8" fill="none" stroke="#2DD4BF" stroke-width="1.4"/><path d="M768 238 l3 3 l6 -6" fill="none" stroke="#2DD4BF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="788" y="242" font-size="12.5" fill="#F1F4FB">no lost disputes</text>
+<circle cx="772" cy="274" r="8" fill="none" stroke="#56628A" stroke-width="1.4"/><path d="M768.5 270.5 l7 7 M775.5 270.5 l-7 7" fill="none" stroke="#56628A" stroke-width="2" stroke-linecap="round"/>
+<text x="788" y="278" font-size="12.5" fill="#93A1C2">never who it is, or how much</text>
+<path d="M296 140 C 340 140, 345 116, 386 116" fill="none" stroke="#6F86C2" stroke-width="1.6" marker-end="url(#a)"/><text x="341" y="100" font-size="11.5" fill="#93A1C2" text-anchor="middle">publishes root</text>
+<path d="M296 210 C 340 210, 345 254, 386 254" fill="none" stroke="#6F86C2" stroke-width="1.6" marker-end="url(#a)"/><text x="330" y="262" font-size="11.5" fill="#93A1C2" text-anchor="middle">witness</text>
+<path d="M650 254 L 740 254" fill="none" stroke="#6F86C2" stroke-width="1.6" marker-end="url(#a)"/><text x="695" y="246" font-size="11.5" fill="#93A1C2" text-anchor="middle">proof</text>
+<path d="M744 116 L 654 116" fill="none" stroke="#6F86C2" stroke-width="1.6" marker-end="url(#a)"/><text x="699" y="108" font-size="11.5" fill="#93A1C2" text-anchor="middle">checks root</text>
+<rect x="36" y="318" width="310" height="58" rx="12" fill="#0F1A35" stroke="#22305A"/><circle cx="58" cy="347" r="5" fill="#5B8CFF"/><text x="74" y="342" font-size="14" font-weight="600" fill="#F1F4FB">Agent credentials</text><text x="74" y="361" font-size="12" fill="#93A1C2">a verified backer and spending limits</text>
+<rect x="363" y="318" width="310" height="58" rx="12" fill="#0F1A35" stroke="#22305A"/><circle cx="385" cy="347" r="5" fill="#5B8CFF"/><text x="401" y="342" font-size="14" font-weight="600" fill="#F1F4FB">Private reputation</text><text x="401" y="361" font-size="12" fill="#93A1C2">a track record without an identity</text>
+<rect x="690" y="318" width="310" height="58" rx="12" fill="#0F1A35" stroke="#22305A"/><circle cx="712" cy="347" r="5" fill="#5B8CFF"/><text x="728" y="342" font-size="14" font-weight="600" fill="#F1F4FB">Proof of funds</text><text x="728" y="361" font-size="12" fill="#93A1C2">money reserved for one verifier</text>
+</g></svg>

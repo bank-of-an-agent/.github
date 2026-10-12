@@ -9,6 +9,7 @@ live in [`../profile/assets`](../profile/assets).
 | Avatar | `src/avatar.svg` | Full-bleed square for the GitHub organization avatar |
 | Banner | `src/banner-dark.svg`, `src/banner-light.svg` | Profile header, rendered at 2x |
 | Architecture | `src/architecture-dark.svg`, `src/architecture-light.svg` | System overview |
+| Private proofs | `src/proofs-dark.svg`, `src/proofs-light.svg` | How a proof flows; generated layout, edit the SVG directly |
 
 ## Palette
 

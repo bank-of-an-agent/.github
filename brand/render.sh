@@ -22,5 +22,7 @@ render banner-dark 2560
 render banner-light 2560
 render architecture-dark 2080
 render architecture-light 2080
+render proofs-dark 2080
+render proofs-light 2080
 rm -f "$conf"
 echo "rendered to $out"
