@@ -82,6 +82,25 @@ const { response } = await agent.fetchWithPayment("https://api.example-data.com/
 6. **Fail closed.** If the policy engine, co-signer or screening is down, payments stop.
 7. **Framework-agnostic.** REST, SDKs or MCP; no single vendor's runtime assumed.
 
+## Roadmap and status
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/roadmap-dark.png">
+  <img alt="V1 roadmap: six phases over twenty weeks, each ending at a gate" src="assets/roadmap-light.png">
+</picture>
+
+Code for all six phases exists and runs on Base Sepolia and in simulation. Gates that need people
+(counsel, auditors, an on-call rotation, funded testnet credentials) stay open until they act.
+
+| Phase | Gate | Status |
+| --- | --- | --- |
+| 0 · Foundations | x402 + Safe spike decided | Met; [ADR 0001](https://github.com/bank-of-an-agent/contracts/blob/main/docs/adr/0001-x402-spend-key-float.md) awaiting sign-off |
+| 1 · Ledger and accounts | 10,000 movements reconcile with zero drift, incl. reorgs | **Met**: 0 drift across 272 injected reorgs |
+| 2 · Keys, policy and co-signer | A red-team agent can't exceed limits in 1,000 attempts | **Met**: 1,086 attempts, 0 leaks |
+| 3 · Payments and x402 | End-to-end suite on Base Sepolia; audits booked | Suite green on the simulated chain; needs testnet credentials and audit booking |
+| 4 · Escrow and streams | No high or critical audit findings | Contracts at 100% coverage; needs two audits |
+| 5 · Developer surface and beta | Legal, audits, exit tool, on-call | Exit tool verified by a shutdown drill; needs counsel, audits and on-call |
+
 ## Security
 
 Please report vulnerabilities privately, never in a public issue: see
