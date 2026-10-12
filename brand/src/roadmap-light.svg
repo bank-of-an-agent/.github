@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 380" width="1040" height="380" role="img" aria-label="Agent Bank v1 roadmap: six phases over twenty weeks, each ending at a gate">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#EEF3FF"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5B8CFF"/>
+      <stop offset="1" stop-color="#2DD4BF"/>
+    </linearGradient>
+  </defs>
+  <rect width="1040" height="380" rx="20" fill="url(#bg)"/>
+  <g font-family="Inter, 'Inter Variable', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+    <text x="36" y="48" font-size="12" font-weight="600" letter-spacing="2" fill="#5B6B92">V1 ROADMAP · 6 PHASES · 20 WEEKS · EACH PHASE ENDS AT A GATE</text>
+
+    <!-- phase cards: x = 36 + i*164, width 152 -->
+    <g>
+      <rect x="36" y="70" width="152" height="196" rx="12" fill="#FFFFFF" stroke="#D3DCEE"/>
+      <text x="50" y="96" font-size="11" font-weight="600" letter-spacing="1.2" fill="#2F5BEA">PHASE 0 · WK 1–2</text>
+      <text x="50" y="120" font-size="14.5" font-weight="600" fill="#0B1222">Foundations</text>
+      <text x="50" y="146" font-size="12" fill="#5B6680">Monorepo, CI</text>
+      <text x="50" y="164" font-size="12" fill="#5B6680">Threat model</text>
+      <text x="50" y="182" font-size="12" fill="#5B6680">x402 + Safe spike</text>
+      <line x1="50" y1="208" x2="174" y2="208" stroke="#D3DCEE"/>
+      <text x="50" y="228" font-size="11" font-weight="600" fill="#B7791F">GATE</text>
+      <text x="50" y="246" font-size="12" fill="#23304D">Spike decision</text>
+    </g>
+    <g>
+      <rect x="200" y="70" width="152" height="196" rx="12" fill="#FFFFFF" stroke="#D3DCEE"/>
+      <text x="214" y="96" font-size="11" font-weight="600" letter-spacing="1.2" fill="#2F5BEA">PHASE 1 · WK 3–6</text>
+      <text x="214" y="120" font-size="14.5" font-weight="600" fill="#0B1222">Ledger &amp; accounts</text>
+      <text x="214" y="146" font-size="12" fill="#5B6680">Double-entry ledger</text>
+      <text x="214" y="164" font-size="12" fill="#5B6680">Smart accounts</text>
+      <text x="214" y="182" font-size="12" fill="#5B6680">Indexer, reconciliation</text>
+      <line x1="214" y1="208" x2="338" y2="208" stroke="#D3DCEE"/>
+      <text x="214" y="228" font-size="11" font-weight="600" fill="#B7791F">GATE</text>
+      <text x="214" y="246" font-size="12" fill="#23304D">10k movements, 0 drift</text>
+    </g>
+    <g>
+      <rect x="364" y="70" width="152" height="196" rx="12" fill="#FFFFFF" stroke="#D3DCEE"/>
+      <text x="378" y="96" font-size="11" font-weight="600" letter-spacing="1.2" fill="#2F5BEA">PHASE 2 · WK 7–10</text>
+      <text x="378" y="120" font-size="14.5" font-weight="600" fill="#0B1222">Keys &amp; policy</text>
+      <text x="378" y="146" font-size="12" fill="#5B6680">Session keys</text>
+      <text x="378" y="164" font-size="12" fill="#5B6680">Policy + co-signer</text>
+      <text x="378" y="182" font-size="12" fill="#5B6680">Mandates, console</text>
+      <line x1="378" y1="208" x2="502" y2="208" stroke="#D3DCEE"/>
+      <text x="378" y="228" font-size="11" font-weight="600" fill="#B7791F">GATE</text>
+      <text x="378" y="246" font-size="12" fill="#23304D">Red team: 0 of 1,000</text>
+    </g>
+    <g>
+      <rect x="528" y="70" width="152" height="196" rx="12" fill="#FFFFFF" stroke="#D3DCEE"/>
+      <text x="542" y="96" font-size="11" font-weight="600" letter-spacing="1.2" fill="#2F5BEA">PHASE 3 · WK 11–14</text>
+      <text x="542" y="120" font-size="14.5" font-weight="600" fill="#0B1222">Payments &amp; x402</text>
+      <text x="542" y="146" font-size="12" fill="#5B6680">Transfers, requests</text>
+      <text x="542" y="164" font-size="12" fill="#5B6680">x402 pay + facilitator</text>
+      <text x="542" y="182" font-size="12" fill="#5B6680">Fees, screening</text>
+      <line x1="542" y1="208" x2="666" y2="208" stroke="#D3DCEE"/>
+      <text x="542" y="228" font-size="11" font-weight="600" fill="#B7791F">GATE</text>
+      <text x="542" y="246" font-size="12" fill="#23304D">E2E on Base Sepolia</text>
+    </g>
+    <g>
+      <rect x="692" y="70" width="152" height="196" rx="12" fill="#FFFFFF" stroke="#D3DCEE"/>
+      <text x="706" y="96" font-size="11" font-weight="600" letter-spacing="1.2" fill="#2F5BEA">PHASE 4 · WK 15–17</text>
+      <text x="706" y="120" font-size="14.5" font-weight="600" fill="#0B1222">Escrow &amp; streams</text>
+      <text x="706" y="146" font-size="12" fill="#5B6680">Escrow, streams</text>
+      <text x="706" y="164" font-size="12" fill="#5B6680">Vaults, executors</text>
+      <text x="706" y="182" font-size="12" fill="#5B6680">Two audits</text>
+      <line x1="706" y1="208" x2="830" y2="208" stroke="#D3DCEE"/>
+      <text x="706" y="228" font-size="11" font-weight="600" fill="#B7791F">GATE</text>
+      <text x="706" y="246" font-size="12" fill="#23304D">No high/critical findings</text>
+    </g>
+    <g>
+      <rect x="856" y="70" width="148" height="196" rx="12" fill="#FFFFFF" stroke="#D3DCEE"/>
+      <text x="870" y="96" font-size="11" font-weight="600" letter-spacing="1.2" fill="#2F5BEA">PHASE 5 · WK 18–20</text>
+      <text x="870" y="120" font-size="14.5" font-weight="600" fill="#0B1222">Developer surface</text>
+      <text x="870" y="146" font-size="12" fill="#5B6680">Python SDK, MCP</text>
+      <text x="870" y="164" font-size="12" fill="#5B6680">Docs, statements</text>
+      <text x="870" y="182" font-size="12" fill="#5B6680">Exit tool, beta</text>
+      <line x1="870" y1="208" x2="990" y2="208" stroke="#D3DCEE"/>
+      <text x="870" y="228" font-size="11" font-weight="600" fill="#B7791F">GATE</text>
+      <text x="870" y="246" font-size="12" fill="#23304D">Legal, audits, on-call</text>
+    </g>
+
+    <!-- timeline -->
+    <rect x="36" y="300" width="968" height="8" rx="4" fill="#DCE5F7"/>
+    <rect x="36" y="300" width="968" height="8" rx="4" fill="url(#bar)" opacity="0.9"/>
+    <g fill="#D99A1E" stroke="#FFFFFF" stroke-width="2">
+      <rect x="125" y="297" width="12" height="12" transform="rotate(45 131 303)"/>
+      <rect x="319" y="297" width="12" height="12" transform="rotate(45 325 303)"/>
+      <rect x="513" y="297" width="12" height="12" transform="rotate(45 519 303)"/>
+      <rect x="707" y="297" width="12" height="12" transform="rotate(45 713 303)"/>
+      <rect x="852" y="297" width="12" height="12" transform="rotate(45 858 303)"/>
+      <rect x="992" y="297" width="12" height="12" transform="rotate(45 998 303)"/>
+    </g>
+    <g font-size="11" fill="#6B7896">
+      <text x="36" y="332">Week 1</text>
+      <text x="519" y="332" text-anchor="middle">Week 10</text>
+      <text x="1004" y="332" text-anchor="end">Week 20</text>
+    </g>
+    <text x="520" y="358" text-anchor="middle" font-size="12.5" fill="#42506E">Security-heavy phases 2 and 4 gate everything after them: nothing reaches mainnet until a red team and two audits fail to break the limits.</text>
+  </g>
+</svg>

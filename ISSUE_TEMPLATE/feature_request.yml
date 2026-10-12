@@ -1,0 +1,27 @@
+name: Feature request
+description: Suggest a capability for agents, principals or sellers.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What are you trying to do, and what gets in the way today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: What should Agent Bank do? API sketches welcome.
+    validations:
+      required: true
+  - type: checkboxes
+    id: constraints
+    attributes:
+      label: Design constraints
+      options:
+        - label: The proposal keeps Agent Bank non-custodial (no bank key can move funds alone).
+          required: true
+        - label: The proposal keeps limits enforceable in code, not only in prompts.
+          required: true

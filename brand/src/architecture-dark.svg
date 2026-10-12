@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 620" width="1040" height="620" role="img" aria-label="Agent Bank architecture: callers, off-chain services in separate trust zones, and on-chain smart accounts on Base">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070B16"/>
+      <stop offset="1" stop-color="#0D1630"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5B8CFF"/>
+      <stop offset="1" stop-color="#2DD4BF"/>
+    </linearGradient>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#7C93C9"/></marker>
+    <marker id="v" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#A78BFA"/></marker>
+    <marker id="t" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#2DD4BF"/></marker>
+  </defs>
+  <rect width="1040" height="620" rx="20" fill="url(#bg)"/>
+
+  <g font-family="Inter, 'Inter Variable', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+    <text x="36" y="54" font-size="12" font-weight="600" letter-spacing="2" fill="#8FA0C6">CALLERS</text>
+    <text x="264" y="54" font-size="12" font-weight="600" letter-spacing="2" fill="#8FA0C6">AGENT BANK · OFF-CHAIN</text>
+    <text x="780" y="54" font-size="12" font-weight="600" letter-spacing="2" fill="#8FA0C6">BASE · ON-CHAIN</text>
+
+    <!-- callers -->
+    <rect x="36" y="80" width="196" height="88" rx="12" fill="#0F1A35" stroke="#263A66"/>
+    <text x="54" y="110" font-size="16" font-weight="600" fill="#F1F4FB">Agents</text>
+    <text x="54" y="132" font-size="12.5" fill="#93A1C2">TS · Python SDKs · MCP</text>
+    <text x="54" y="150" font-size="12.5" fill="#93A1C2">signed with session keys</text>
+
+    <rect x="36" y="192" width="196" height="88" rx="12" fill="#0F1A35" stroke="#263A66"/>
+    <text x="54" y="222" font-size="16" font-weight="600" fill="#F1F4FB">Principals</text>
+    <text x="54" y="244" font-size="12.5" fill="#93A1C2">console · passkeys</text>
+    <text x="54" y="262" font-size="12.5" fill="#93A1C2">owner key for loosening</text>
+
+    <rect x="36" y="416" width="196" height="88" rx="12" fill="#0F1A35" stroke="#263A66"/>
+    <text x="54" y="446" font-size="16" font-weight="600" fill="#F1F4FB">Sellers</text>
+    <text x="54" y="468" font-size="12.5" fill="#93A1C2">x402 paywalls for</text>
+    <text x="54" y="486" font-size="12.5" fill="#93A1C2">APIs and MCP tools</text>
+
+    <!-- off-chain -->
+    <rect x="264" y="68" width="488" height="456" rx="16" fill="#0B1329" stroke="#1F2E52"/>
+
+    <rect x="284" y="86" width="216" height="104" rx="12" fill="#132449" stroke="#3A5BA8"/>
+    <text x="302" y="116" font-size="16" font-weight="600" fill="#F1F4FB">API</text>
+    <text x="302" y="138" font-size="12.5" fill="#A9B7D8">REST · OpenAPI 3.1</text>
+    <text x="302" y="156" font-size="12.5" fill="#A9B7D8">holds · approvals · webhooks</text>
+    <text x="302" y="174" font-size="12.5" fill="#A9B7D8">builds user operations</text>
+
+    <rect x="284" y="236" width="216" height="88" rx="12" fill="#0F1A35" stroke="#263A66"/>
+    <text x="302" y="266" font-size="16" font-weight="600" fill="#F1F4FB">Ledger</text>
+    <text x="302" y="288" font-size="12.5" fill="#93A1C2">PostgreSQL · double-entry</text>
+    <text x="302" y="306" font-size="12.5" fill="#93A1C2">append-only · integer units</text>
+
+    <rect x="284" y="416" width="216" height="88" rx="12" fill="#0F1A35" stroke="#263A66"/>
+    <text x="302" y="446" font-size="16" font-weight="600" fill="#F1F4FB">x402 facilitator</text>
+    <text x="302" y="468" font-size="12.5" fill="#93A1C2">verify · settle · replay guard</text>
+    <text x="302" y="486" font-size="12.5" fill="#93A1C2">settle-before-serve over $1</text>
+
+    <rect x="520" y="86" width="212" height="214" rx="14" fill="#140F2E" stroke="#6D4FD6" stroke-dasharray="5 4"/>
+    <text x="536" y="108" font-size="10.5" font-weight="600" letter-spacing="1.4" fill="#B9A6FF">SEPARATE CLOUD ACCOUNT</text>
+    <rect x="534" y="122" width="184" height="68" rx="10" fill="#1C1540" stroke="#4E3BA0"/>
+    <text x="550" y="150" font-size="15" font-weight="600" fill="#F1F4FB">Policy engine</text>
+    <text x="550" y="171" font-size="12" fill="#B6A9E4">deterministic · no LLM</text>
+    <rect x="534" y="206" width="184" height="78" rx="10" fill="#1C1540" stroke="#4E3BA0"/>
+    <text x="550" y="234" font-size="15" font-weight="600" fill="#F1F4FB">Co-signer</text>
+    <text x="550" y="255" font-size="12" fill="#B6A9E4">KMS key · fails closed</text>
+    <text x="550" y="272" font-size="12" fill="#B6A9E4">refuses, never moves</text>
+
+    <rect x="520" y="330" width="212" height="88" rx="12" fill="#0F1A35" stroke="#263A66"/>
+    <text x="538" y="360" font-size="16" font-weight="600" fill="#F1F4FB">Indexer</text>
+    <text x="538" y="382" font-size="12.5" fill="#93A1C2">reconciles chain and ledger</text>
+    <text x="538" y="400" font-size="12.5" fill="#93A1C2">reorgs · suspense · alerts</text>
+
+    <!-- on-chain -->
+    <rect x="780" y="68" width="226" height="456" rx="16" fill="#08162A" stroke="#1B4A55"/>
+    <rect x="796" y="86" width="194" height="112" rx="12" fill="#0D2233" stroke="url(#ring)" stroke-width="1.6"/>
+    <text x="812" y="116" font-size="16" font-weight="600" fill="#F1F4FB">Smart accounts</text>
+    <text x="812" y="138" font-size="12.5" fill="#9FC2CC">Safe · ERC-7579 modules</text>
+    <text x="812" y="156" font-size="12.5" fill="#9FC2CC">Smart Sessions, 2-of-2</text>
+    <text x="812" y="174" font-size="12.5" fill="#9FC2CC">one per agent</text>
+
+    <rect x="796" y="214" width="194" height="88" rx="12" fill="#0B1D2C" stroke="#1E4A57"/>
+    <text x="812" y="244" font-size="16" font-weight="600" fill="#F1F4FB">Bank contracts</text>
+    <text x="812" y="266" font-size="12.5" fill="#9FC2CC">escrow · streams · vaults</text>
+    <text x="812" y="284" font-size="12.5" fill="#9FC2CC">top-up · sweep executors</text>
+
+    <rect x="796" y="318" width="194" height="88" rx="12" fill="#0B1D2C" stroke="#1E4A57"/>
+    <text x="812" y="348" font-size="16" font-weight="600" fill="#F1F4FB">ERC-4337</text>
+    <text x="812" y="370" font-size="12.5" fill="#9FC2CC">EntryPoint v0.7 · bundler</text>
+    <text x="812" y="388" font-size="12.5" fill="#9FC2CC">gas billed in USDC</text>
+
+    <rect x="796" y="422" width="194" height="82" rx="12" fill="#0B1D2C" stroke="#1E4A57"/>
+    <text x="812" y="452" font-size="16" font-weight="600" fill="#F1F4FB">USDC</text>
+    <text x="812" y="474" font-size="12.5" fill="#9FC2CC">EIP-3009 authorizations</text>
+  </g>
+
+  <g fill="none" stroke-width="2">
+    <path d="M232 124 L282 124" stroke="#7C93C9" marker-end="url(#a)"/>
+    <path d="M232 236 C262 236 258 168 282 168" stroke="#7C93C9" marker-end="url(#a)"/>
+    <path d="M232 460 L282 460" stroke="#7C93C9" marker-end="url(#a)"/>
+    <path d="M500 132 L532 150" stroke="#A78BFA" marker-end="url(#v)"/>
+    <path d="M534 244 C512 244 512 186 502 180" stroke="#A78BFA" marker-end="url(#v)"/>
+    <path d="M478 86 C500 14 975 4 975 84" stroke="#2DD4BF" marker-end="url(#t)"/>
+    <path d="M392 190 L392 234" stroke="#7C93C9" marker-end="url(#a)"/>
+    <path d="M520 360 C506 360 512 300 502 296" stroke="#7C93C9" marker-end="url(#a)"/>
+    <path d="M796 362 L734 368" stroke="#2DD4BF" marker-end="url(#t)"/>
+    <path d="M500 462 L794 462" stroke="#7C93C9" marker-end="url(#a)"/>
+  </g>
+  <g font-family="Inter, 'Inter Variable', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5">
+    <text x="735" y="17" text-anchor="middle" fill="#7FE3D3">co-signed user operation, via the bundler</text>
+    <text x="404" y="218" fill="#8FA0C6">holds</text>
+    <text x="764" y="356" text-anchor="middle" fill="#7FE3D3">logs</text>
+    <text x="646" y="452" text-anchor="middle" fill="#8FA0C6">transferWithAuthorization</text>
+  </g>
+  <text x="520" y="574" text-anchor="middle" font-family="Inter, 'Inter Variable', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#AEB9D3">Only the agent's own smart account can move money. Agent Bank can refuse a payment, never make one.</text>
+</svg>
